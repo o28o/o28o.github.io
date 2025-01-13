@@ -33,7 +33,7 @@ function createPopup() {
 
   const closeBtn = document.createElement('button');
   closeBtn.classList.add('close-btn');
-  closeBtn.innerHTML = '<img src="/assets/svg/xmark.svg" class=""></img>';
+  closeBtn.innerHTML = '<img src="assets/svg/xmark.svg" class=""></img>';
 
   const iframe = document.createElement('iframe');
   iframe.src = '';
