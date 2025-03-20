@@ -120,7 +120,7 @@ console.log('loaded: ' + savedTop +  'and ' + savedLeft);
   
   const closeBtn = document.createElement('button');
   closeBtn.classList.add('close-btn');
-  closeBtn.innerHTML = '<img src="/assets/svg/xmark.svg" class=""></img>';
+  closeBtn.innerHTML = '<img src="./assets/svg/xmark.svg" class=""></img>';
 
 // Создаем кнопку "Search with dhamma.gift"
 const openBtn = document.createElement('a');
@@ -287,9 +287,9 @@ let dictionaryVisible = localStorage.getItem('dictionaryVisible') === 'true';
 
 const toggleBtn = document.querySelector('.toggle-dict-btn');
 if (dictionaryVisible) {
-  toggleBtn.innerHTML = '<img src="/assets/svg/comment.svg"></img>';
+  toggleBtn.innerHTML = '<img src="./assets/svg/comment.svg"></img>';
 } else {
-  toggleBtn.innerHTML = '<img src="/assets/svg/comment-slash.svg"></img>';
+  toggleBtn.innerHTML = '<img src="./assets/svg/comment-slash.svg"></img>';
   clearParams();
 }
 
@@ -301,9 +301,9 @@ toggleBtn.addEventListener('click', () => {
   localStorage.setItem('dictionaryVisible', dictionaryVisible);
 
   if (dictionaryVisible) {
-    toggleBtn.innerHTML = '<img src="/assets/svg/comment.svg"></img>';
+    toggleBtn.innerHTML = '<img src="./assets/svg/comment.svg"></img>';
   } else {
-    toggleBtn.innerHTML = '<img src="/assets/svg/comment-slash.svg"></img>';
+    toggleBtn.innerHTML = '<img src="./assets/svg/comment-slash.svg"></img>';
   }
 });
 
